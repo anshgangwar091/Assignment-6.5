@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile & Product Card Showcase</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="card-showcase.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Component Showcase</h1>
+        <p>Featuring custom profile and product cards built with CSS box models, absolute positioning, and responsive layouts.</p>
+    </header>
+
+    <main class="showcase-container">
+        
+        <!-- 1. Profile Card Component -->
+        <article class="card profile-card">
+            <!-- Positioned Badge -->
+            <span class="card-badge available-badge">Available</span>
+
+            <!-- Profile Image -->
+            <div class="profile-image-container">
+                <img src="images/profile-avatar.jpg" alt="Portrait of Alex Turner" class="profile-img">
+            </div>
+
+            <!-- Name and Role -->
+            <div class="card-header-info">
+                <h2>Alex Turner</h2>
+                <p class="card-role">Senior Frontend Developer</p>
+            </div>
+
+            <!-- Short Description -->
+            <p class="card-description">
+                Passionate computer science student and web developer specializing in accessible semantic HTML, CSS design tokens, and modern JavaScript user interfaces.
+            </p>
+
+            <!-- Skills -->
+            <div class="skills-container">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git</span>
+            </div>
+
+            <!-- Contact Button -->
+            <button class="card-btn contact-btn">Contact Me</button>
+        </article>
+
+        <!-- 2. Product Card Component -->
+        <article class="card product-card">
+            <!-- Positioned Badge -->
+            <span class="card-badge sale-badge">20% Off</span>
+
+            <!-- Product Image -->
+            <div class="product-image-container">
+                <img src="images/product-headphones.jpg" alt="Wireless Noise-Canceling Headphones" class="product-img">
+            </div>
+
+            <!-- Product Name & Price -->
+            <div class="card-header-info">
+                <h2>DevPulse Pro Headphones</h2>
+                <p class="product-price">$149.00 <span class="old-price">$189.00</span></p>
+            </div>
+
+            <!-- Short Description -->
+            <p class="card-description">
+                High-fidelity active noise-canceling wireless headphones crafted specifically for software developers and deep focus coding sessions.
+            </p>
+
+            <!-- Buy Button -->
+            <button class="card-btn buy-btn">Add to Cart</button>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Profile & Product Card Assignment</p>
+    </footer>
+
+</body>
+</html>

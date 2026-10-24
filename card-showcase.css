@@ -1,0 +1,201 @@
+/* card-showcase.css — Assignment 6.5 */
+
+/* Global Resets & Border-Box Model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #2d3748;
+    line-height: 1.6;
+    padding: 30px 20px;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #1a365d;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #718096;
+}
+
+/* Showcase Flex Container for Responsiveness */
+.showcase-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Base Card Styling (Rules 1, 2, 3) */
+.card {
+    position: relative; /* Rule 3: Anchor context for absolute badges */
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px; /* Rule 2: Rounded corners */
+    padding: 25px;       /* Rule 1: Box model padding */
+    width: 350px;
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Absolute Positioned Badge (Rule 3) */
+.card-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.available-badge {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+.sale-badge {
+    background-color: #fed7d7;
+    color: #742a2a;
+}
+
+/* Profile Card Specific Styles */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3182ce;
+}
+
+/* Product Card Specific Styles */
+.product-image-container {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.product-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #edf2f7;
+}
+
+/* Typography & Content Layout */
+.card-header-info {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: #1a365d;
+    margin-bottom: 4px;
+}
+
+.card-role {
+    font-size: 0.9rem;
+    color: #3182ce;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2b6cb0;
+}
+
+.old-price {
+    font-size: 0.9rem;
+    color: #a0aec0;
+    text-decoration: line-through;
+    margin-left: 8px;
+    font-weight: normal;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Skills Tags Layout */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.skill-tag {
+    background-color: #edf2f7;
+    color: #4a5568;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Buttons */
+.card-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.contact-btn {
+    background-color: #3182ce;
+    color: #ffffff;
+}
+
+.contact-btn:hover {
+    background-color: #2b6cb0;
+}
+
+.buy-btn {
+    background-color: #319795;
+    color: #ffffff;
+}
+
+.buy-btn:hover {
+    background-color: #285e61;
+}
